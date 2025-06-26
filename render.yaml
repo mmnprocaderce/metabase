@@ -1,0 +1,20 @@
+services:
+  - type: web
+    name: metabase
+    env: docker
+    dockerfilePath: ./Dockerfile
+    envVars:
+      - key: PORT
+        value: "3000"
+      - key: MB_DB_TYPE
+        value: "postgres"
+      - key: MB_DB_HOST
+        value: "dpg-d1enn0fdiees73dload0-a.frankfurt-postgres.render.com"
+      - key: MB_DB_PORT
+        value: "5432"
+      - key: MB_DB_USER
+        value: "renderpostgres_m1fo_user"
+      - key: MB_DB_PASS
+        value: "OL2V6anbI6lTOC0x3hcbuB9XxMdTrPNh"
+      - key: MB_DB_DBNAME
+        value: "renderpostgres_m1fo"
