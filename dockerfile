@@ -1,4 +1,4 @@
-FROM openjdk:21-jdk-alpine
+FROM eclipse-temurin:21-jdk-alpine
 
 # Variables Metabase - adapte si tu veux les surcharger dans Render
 ENV MB_DB_TYPE=postgres
