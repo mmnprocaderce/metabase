@@ -1,6 +1,2 @@
 FROM metabase/metabase:latest
-
-COPY entrypoint.sh /entrypoint.sh
-RUN chmod +x /entrypoint.sh
-
-ENTRYPOINT ["/entrypoint.sh"]
+ENV MB_JETTY_PORT=$PORT
